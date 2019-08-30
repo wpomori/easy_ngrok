@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Subindo ngrok ... "
+pkill -f ngrok
+ngrok tcp 9088 2> ./filelist.txt &
+echo "FIM!!!"
